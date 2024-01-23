@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    padding:0;
 }
 
 :root{
@@ -45,6 +44,37 @@ button{
 /*region main*/
 
 main{
+    width: 80%;
+    margin: auto; 
+    
+}
 
+.prova{
+   width: calc(100%/7);
+   
+}
+.webcam{
+     box-sizing: content-box;
+     height: 120px;
+     width: 150px;
+}
+
+.userweb{
+    display: flex;
+    box-sizing:content-box;
+    padding-top: 40px;
+    height: 120px;
+    width: 150px;
+}
+
+.silenz{
+    color: var(--zoo-lighter);
+    font-size: 10px;
+    background-color: var(--zoo-light);
+    padding: 2px;
+    width: 60px;
+    opacity: 70%;
+    position: relative;
+    top:-15px;
 }
 
