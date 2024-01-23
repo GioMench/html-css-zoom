@@ -13,3 +13,38 @@
     --zo-danger: #d51814;
 
 }
+
+body{
+    background-color: var(--zo-darker);
+}
+
+/*region header*/
+header{
+    background-color: aqua;
+    height: 25px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-head{
+    padding-right: 2px;
+}
+
+button{
+    color: var(--zoo-lighter);
+    padding: 3px;
+    font-size: 10px ;
+    background-color: var(--zoo-light);
+    border-width: 0;
+    border-radius: 3px;
+}
+/*end region header*/
+
+/*region main*/
+
+main{
+
+}
+
