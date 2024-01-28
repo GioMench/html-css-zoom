@@ -1,34 +1,39 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-
     --zo-darker: #000000;
     --zo-dark: #232322;
     --zoo-light: #4a4a4a;
     --zoo-lighter: #fefffe;
     --zo-succes: #4ac401;
     --zo-danger: #d51814;
-
 }
 
 body {
     background-color: var(--zo-darker);
 }
 
+.wrapper{
+    height: 100vh;
+}
+
+.col-7 {
+    width: calc(100% / 7);
+}
 /*region header*/
+
 header {
-    background-color: aqua;
-    height: 25px;
     width: 100vw;
-    position: fixed;
-    display: flex;
-    justify-content: flex-end;
+    height: 30px;     
 }
 
 .button-head {
-    padding-right: 2px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 button {
@@ -45,32 +50,31 @@ button {
 /*region main*/
 
 main {
-    width: 90%;
+    height: calc(100vh - 70px);
+}
+
+.participants-box{
+    width: 80%; 
     margin: auto;
-    height: 90vh;
-}
-
-
-.webcam {
-    box-sizing: content-box;
-    height: 120px;
-    width: 150px;
-}
-
-.userweb {
     display: flex;
-    box-sizing: content-box;
-    padding-top: 40px;
-    height: 120px;
-    width: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+
+
+.partecipant{
+    box-sizing: border-box;
+}
+
 
 .photo {
-    height: 120px;
-    width: 150px;
+    display:block;
+    position: absolute; 
 }
 
-.silenz {
+.name {
     color: var(--zoo-lighter);
     font-size: 10px;
     background-color: var(--zoo-light);
@@ -78,13 +82,14 @@ main {
     width: 60px;
     opacity: 70%;
     position: relative;
-    top: -15px;
+    bottom: 0px;
 }
 
-.prova {
-    width: calc(100%/7);
 
-}
+
+/*end region main*/
+
+/*region footer*/
 
 footer {
     position: fixed;
@@ -100,6 +105,8 @@ footer {
 .container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 5px;
     color: var(--zoo-lighter);
 }
 
