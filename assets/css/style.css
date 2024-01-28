@@ -50,7 +50,7 @@ button {
 /*region main*/
 
 main {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
 }
 
 .participants-box{
@@ -91,15 +91,13 @@ main {
 
 /*region footer*/
 
-footer {
-    position: fixed;
-    height: 50px;
-    width: 100vw;
+.icon-footer{
     background-color: var(--zo-dark);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 70px; 
 }
 
 .container {
@@ -117,4 +115,22 @@ footer {
 
 .word{
     font-size: small;
+}
+
+.fa-angle-up{
+    font-size: x-small;
+}
+
+.fa-arrow-up-right-from-square{
+    color: var(--zo-succes);
+}
+
+.end-met{
+    padding: 25px;
+    color: var(--zo-danger);
+    background-color: var(--zoo-light);
+}
+
+.icon{
+    text-align: center;
 }
